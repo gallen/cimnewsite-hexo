@@ -34,9 +34,9 @@ Either follow hexo document https://hexo.io/docs/writing or just create markdown
 ## Hosting, CI and CMS
 * Hosting: The generated site is just static files, any hosting provider is fine. Github/Gitlab page, google firebase, zeit now, netlify all provide generous free hosting option.
 
-* CI(continuous build): there're quite a lot online CI options there. Travis is quite popular. By far netlify is most easy one and have good integration with github.
+* CI(continuous build): there're quite a lot online CI options there. Travis is quite popular. By far netlify is most easy one and has good integration with github as well.
 
-* CMS: provide option non-tech writer update the content. No need to know git/github etc. Netlify provides an out of box template for hexo, amazing :)
+* CMS: provide option for non-tech writer to update the content. No need to know git/github etc. Netlify provides an out of box template for hexo, amazing :)
 
 Netlify hosting: https://cimnewsite.netlify.com/
 
