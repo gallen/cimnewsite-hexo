@@ -2,6 +2,7 @@
 title: Test
 categories:
 - 其他
+date: '2018-12-10'
 ---
 ## Purpose
 This is a test of evaluating [Hexo](https://hexo.io/) - a static site generating tool, mainly for blogging - to be used as the framework for new church web site.
