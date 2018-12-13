@@ -30,7 +30,31 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Categories", name: "categories", widget: "list"}  
-      - {label: "Tags", name: "tags", widget: "list"}           
+      - {label: "Categories", name: "categories", widget: "list", default: ["活动"]}  
+      - {label: "Tags", name: "tags", widget: "list", required: false}           
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}      
+      - {label: "Body", name: "body", widget: "markdown"}  
+  - name: "weekly" # Used in routes, e.g., /admin/collections/blog
+    label: "Weekly News" # Used in the UI
+    folder: "source/_posts/weekly" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "list", default: ["家讯"]}  
+      - {label: "Tags", name: "tags", widget: "list", required: false}           
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}       
+  - name: "reading" # Used in routes, e.g., /admin/collections/blog
+    label: "Bible Study" # Used in the UI
+    folder: "source/_posts/reading" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "list", default: ["读经"]}  
+      - {label: "Tags", name: "tags", widget: "list", required: false}           
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}               
