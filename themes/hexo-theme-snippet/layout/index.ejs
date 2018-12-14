@@ -16,6 +16,9 @@
         var random2 = Math.floor(Math.random() * (urls2.length));
     }
     var _photoUrl = post.img || (urls.length > 0 && urls[random]) || (urls2.length > 0 && urls2[random2]) || '';
+    if (post.hide) {
+        return;
+    }
 %>
 <article class="post">
     <% if(_photoUrl) {%>
